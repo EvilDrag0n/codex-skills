@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说持续创作"
+  short_description: "读取总纲与分卷续写小说，同步剧情核销、后续章节和人物年龄状态"
+  default_prompt: "使用 $novel-continuity 读取这部小说的总纲、当前分卷和已有记录，结合 human-writing 续写下一章，并同步已发生总结、紧接章节计划、未发生待办和主要角色状态。"
