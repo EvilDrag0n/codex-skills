@@ -16,11 +16,21 @@
 
 记录格式：[novel-continuity/references/records.md](novel-continuity/references/records.md)
 
+## novel-polish · 小说初稿优化
+
+诊断和润色小说初稿，关注章节、场景和分卷的衔接，以及人物对白与心理描写，同时保留已有剧情、设定和作者文风。
+
+- 支持单段精修、章节衔接检查，以及多章或整卷的分阶段诊断与精修。
+- 提供仅诊断、句段精修和场景重写三种修改力度，默认进行句段级精修。
+- 按需读取衔接、对白、心理、全书工作流程和连续性档案参考文件。
+
+技能入口：[novel-polish/SKILL.md](novel-polish/SKILL.md)
+
 ## 安装
 
-将本仓库的 `novel-continuity` 文件夹复制到 Codex 技能目录 `$CODEX_HOME/skills/`，未设置 `CODEX_HOME` 时使用 `~/.codex/skills/`。
+将需要的技能文件夹（`novel-continuity` 或 `novel-polish`）完整复制到 Codex 技能目录 `$CODEX_HOME/skills/`，未设置 `CODEX_HOME` 时使用 `~/.codex/skills/`。
 
-此技能需要另行安装 `human-writing`（活人感写作）。本仓库未包含该依赖。
+`novel-continuity` 需要另行安装 `human-writing`（活人感写作）。本仓库未包含该依赖。
 
 ## 使用
 
@@ -31,3 +41,9 @@
 ```
 
 已有同用途记录时沿用项目文件；首次建立时默认保存在小说根目录的 `创作记录/`。仅有大纲时，未来事件保留为计划，不能计入已发生事实。
+
+优化已有初稿时调用：
+
+```text
+使用 $novel-polish 检查这两章的衔接、对白和心理描写，保留原有剧情和文风，并说明修改原因。
+```
