@@ -1,0 +1,4 @@
+interface:
+  display_name: "长篇小说创作与续写"
+  short_description: "生成主题、故事世界、人物和大纲，按活人感标准写正文并持续续写"
+  default_prompt: "使用 $novel-create 帮我开一本新书。先出主题与卖点，再做故事世界、人物和大纲，然后按活人感标准写第一章，并建立续写用的创作记录。"

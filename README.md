@@ -2,6 +2,16 @@
 
 个人维护的 Codex 技能。
 
+## novel-create · 长篇小说创作与续写
+
+从主题、故事世界和人物设定开始，规划总纲与章纲，按章创作正文，并维护续写所需的剧情与人物记录。
+
+- 按需提供主题、世界、人物和大纲模板，以及续写和修订参考。
+- 自带活人感写作规则，支持独立使用；创作记录可与 `novel-continuity` 共用。
+- 提供项目进度和章节检查脚本，运行脚本需要 Python。
+
+技能入口：[novel-create/SKILL.md](novel-create/SKILL.md)
+
 ## novel-continuity · 小说持续创作
 
 中文长篇小说创作、续写与改稿时，读取总纲、分卷纲和已有正文，结合 `human-writing` 维护叙事连续性。
@@ -28,11 +38,17 @@
 
 ## 安装
 
-将需要的技能文件夹（`novel-continuity` 或 `novel-polish`）完整复制到 Codex 技能目录 `$CODEX_HOME/skills/`，未设置 `CODEX_HOME` 时使用 `~/.codex/skills/`。
+将需要的技能文件夹（`novel-create`、`novel-continuity` 或 `novel-polish`）完整复制到 Codex 技能目录 `$CODEX_HOME/skills/`，未设置 `CODEX_HOME` 时使用 `~/.codex/skills/`。
 
 `novel-continuity` 需要另行安装 `human-writing`（活人感写作）。本仓库未包含该依赖。
 
 ## 使用
+
+从头创作时调用：
+
+```text
+使用 $novel-create 帮我规划长篇小说的主题、人物和大纲，再写第一章并建立创作记录。
+```
 
 在小说项目中调用：
 
